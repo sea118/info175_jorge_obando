@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#***tarea taller***
+#$1 es la carpeta que respaldaremos, $2 es el destino
+ahora=$(date +"%Y_%m_%d")
+pwd=$(pwd)
+#echo "$pwd"
+#echo "$ahora"
+#echo "$1"
+#echo "$2"
+
+tar -cvf $ahora"_nombre".tar $1 #aqui creamos el archivo .tar que contentra la primera entrada
+
+cp $pwd/$ahora"_nombre".tar $2 #copiamos en la carpeta del destino 
+
+
+
